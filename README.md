@@ -1,6 +1,8 @@
 # Simple circuits
 
-A collection of simple electronic circuits. Each circuit has its own folder with its KiCad project.
+## About
+
+Simple circuits is a collection of small electronic circuits. Each circuit has its own folder with a KiCad project, a schematic, and a Makefile. The Makefile runs the electrical rule check and exports the netlist, the PDF schematic, and the bill of materials. The folder `latch-two-buttons` is the first circuit and the template for the others.
 
 ## Circuits
 
@@ -18,4 +20,4 @@ simple-circuits/
     └── README.md
 ```
 
-Build and export files (gerbers, drill files, BOM, PDF, and similar) are not tracked by git. See `.gitignore`.
+Build and export files (gerbers, drill files, BOM, and similar) are not tracked by git. The schematic PDF is tracked. See `.gitignore`.

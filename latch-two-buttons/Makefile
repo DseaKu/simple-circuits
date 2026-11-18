@@ -17,7 +17,7 @@ help:
 	@echo "Targets:"
 	@echo "  make erc      Run the schematic ERC (fails on violations)"
 	@echo "  make netlist  Export the netlist (XML)"
-	@echo "  make pdf      Plot the schematic to PDF"
+	@echo "  make pdf      Plot the schematic to PDF, next to the schematic"
 	@echo "  make bom      Export the bill of materials (CSV)"
 	@echo "  make drc      Run the PCB DRC (fails on violations)"
 	@echo "  make gerbers  Export the gerber files"
@@ -43,8 +43,8 @@ erc: check | $(OUT)
 netlist: check | $(OUT)
 	$(KICAD_CLI) sch export netlist --format kicadxml --output $(OUT)/netlist.xml $(SCH)
 
-pdf: check | $(OUT)
-	$(KICAD_CLI) sch export pdf --output $(OUT)/schematic.pdf $(SCH)
+pdf: check
+	$(KICAD_CLI) sch export pdf --output $(basename $(SCH)).pdf $(SCH)
 
 bom: check | $(OUT)
 	$(KICAD_CLI) sch export bom --output $(OUT)/bom.csv $(SCH)
