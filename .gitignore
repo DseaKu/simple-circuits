@@ -1,0 +1,41 @@
+# KiCad backups, autosave and lock files
+*-backups/
+*.bak
+*.sch-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_prl
+_autosave-*
+*.lck
+~*.lck
+*-cache.*
+fp-info-cache
+
+# KiCad export and build outputs
+build/
+out/
+output/
+gerber/
+gerbers/
+plots/
+drill/
+bom/
+*.gbr
+*.gbrjob
+*.drl
+*.pos
+*.net
+*.zip
+*.step
+*.stp
+*.pdf
+*.svg
+*.png
+*.csv
+*.rpt
+*.erc.json
+*.drc.json
+
+# OS and editor files
+.DS_Store
+.vscode/
