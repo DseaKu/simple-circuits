@@ -1959,6 +1959,87 @@
 		)
 		(uuid "a57d3c2f-7759-5036-9350-9a02229d709c")
 	)
+	(text ""
+		(exclude_from_sim no)
+		(at 60 147.5 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "6cb7be80-cb47-5f53-98eb-e957124f5480")
+	)
+	(text "HOW THE LATCH HOLDS THE SET STATE:"
+		(exclude_from_sim no)
+		(at 60 151.0 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "56193a50-0652-5543-838e-46e826e56ee4")
+	)
+	(text "1. Press SET: SW1 pulls the Q2 base to GND. Q2 turns off."
+		(exclude_from_sim no)
+		(at 60 154.5 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "b12cef6b-4869-52f3-b9b8-642db5c9da33")
+	)
+	(text "2. The Q2 collector goes high. R3 sends this to the Q1 base. Q1 turns on."
+		(exclude_from_sim no)
+		(at 60 158.0 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "ac80765e-8f1f-50c0-86a7-f7baadeff318")
+	)
+	(text "3. The Q1 collector goes low. R4 keeps the Q2 base low. Q2 stays off."
+		(exclude_from_sim no)
+		(at 60 161.5 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "95d125cb-221d-58e3-97f9-160ce9dcc397")
+	)
+	(text "4. Release SW1: the state holds. Each transistor keeps the other one in its state."
+		(exclude_from_sim no)
+		(at 60 165.0 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "25cc398b-03f8-568f-9a37-389f086b73c3")
+	)
+	(text "5. R4 (10k) is weaker than the button, so the button wins while it is pressed."
+		(exclude_from_sim no)
+		(at 60 168.5 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "63d944c8-d0e4-5dc3-a0aa-abec29a208e0")
+	)
+	(text "6. RESET works the same way, with Q1 and Q2 swapped."
+		(exclude_from_sim no)
+		(at 60 172.0 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "d9699275-c836-54ef-af12-50c064c20008")
+	)
+	(text "7. Without power, the latch loses its state."
+		(exclude_from_sim no)
+		(at 60 175.5 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left bottom)
+		)
+		(uuid "b67050bd-db86-5750-9077-f79ab01ff32f")
+	)
 	(sheet_instances
 		(path "/" (page "1"))
 	)
